@@ -17,7 +17,7 @@ body {
 	justify-content: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	width: 100%;
+	width: 90%;
 }
 
 h1,
@@ -44,7 +44,7 @@ h4 {
 p {
 	font-size: .875rem;
 	line-height: 1.3125rem;
-  padding: 0 1.875rem;
+  padding: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -54,7 +54,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 }
 
 header h1 {
@@ -119,11 +119,11 @@ header nav ul li a {
 
 .main-title {
 	height: auto;
-	width: 90%;
+	width: 100%;
 }
 .main-title h3 {
 	text-align: left;
-	padding: 0.313rem 0;
+	padding: 0;
 	color: #77a466;
 }
 .main-title p {
@@ -141,18 +141,13 @@ header nav ul li a {
 }
 
 .section-one h4 {
-	padding: 0.625rem 0;
-}
-
-.section-two {
-	border-left: 0.063rem solid #eee;
-	border-right: 0.063rem solid #eee;
+	padding: 0;
 }
 
 .section-one,
 .section-two h4,
 .section-three h4 {
-	padding: 0.625rem 1.875rem;
+	padding: 0.625rem 0;
 }
 
 .menu {
