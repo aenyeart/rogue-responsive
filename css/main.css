@@ -108,7 +108,9 @@ header nav ul li a {
 	width: 100%;
 	flex-wrap: wrap;
 }
-
+.bottom-section {
+	border-bottom: 0.063rem solid #eee;
+}
 .main-image {
 	height: auto;
 }
@@ -171,7 +173,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 0.188rem solid #eee;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -188,7 +189,6 @@ TABLET
 @media all and (min-width: 768px) {
 	.bottom-section {
 		border-top: 0.063rem solid #eee;
-		border-bottom: 0.063rem solid #eee;
 		justify-content: space-between;
 		align-items: stretch;
 	}
@@ -196,22 +196,14 @@ TABLET
 		border-top: none;
 		display: flex;
 		align-content: flex-start;
-		width: 30%;
-		padding-right: 1rem;
+		justify-content: center;
+		width: 33%;
 	}
-
-	.section-one {
+	.section-one, .section-two {
 		border-right: 0.063rem solid #eee;
-	}
-	.section-two {
-		border-right: 0.063rem solid #eee;
-	}
-	.section-three {
 	}
 	.parent {
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
+		width: 90%;
 	}
 
 	footer {
@@ -222,6 +214,27 @@ TABLET
 /******
 DESKTOP
 ******/
-@media all and (min-width: 1200 px) {
+@media all and (min-width: 1200px) {
+	header {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
 
+	header h1 {
+		padding: 2.375rem 0;
+	}
+	header nav {
+		padding: 1rem 0;
+		width: 40%;
+		border: none;
+	}
+	header nav ul {
+		justify-content: space-between;
+		align-content: space-between;
+	}
+	header nav ul li {
+		justify-content: center;
+		padding: 1rem 0;
+		width: auto;
+	}
 }
